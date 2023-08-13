@@ -1,0 +1,58 @@
+\documentclass[../pde.tex]{subfiles}
+\begin{document}
+    \chapter{\sffamily Introduction to Partial Differential Equations}
+    
+    \section{\sffamily Notation}
+    We start by defining the typical functio that we'll be solving for in PDE's, in this case:
+    \begin{align*}
+        u : \mathbb{R}^2 &\rightarrow \mathbb{R} \\
+            (x,t) &\mapsto u=u(x,t) 
+    \end{align*}
+    Here we have a function that maps \emph{2-tuples} (in this case position and time) to real numbers. The elements of the
+    \emph{domain}, $x$ and $t $,  are called \emph{independent} variables and the element of the \emph{codomain}, $u$ is called
+    the \emph{dependent} variable. This notation can be a little confusing because we are calling the function and the element of
+    the codomain with the same name, but it's the more used notation and after adaptation is very clear. Note that in this
+    example is a function from $\mathbb{R} ^2$ to $\mathbb{R} $ but it can have whatever domain it needs.
+    
+    Once we've defined the function we are solving for, we'll define the \emph{partial derivative with respect to $t$} of this function as:
+    \begin{align*}
+        u_{t}: \mathbb{R} ^2 & \rightarrow \mathbb{R} \\
+        (x,t) &\mapsto u_{t}=(\partial_{t} u)(x,t)
+    \end{align*}
+    
+    Here the \emph{independent} variables are still $x$ and $t$, and the \emph{dependent} variable is $u_{t}$ (the same as the
+    function name). In this case we also use the same name for the function and the element of the codomain. Note the use of the $\partial_{t} $
+    \emph{operator}. 
+    \begin{itemize}
+        \item $\partial_{t} u$ : is the partial derivate of $u$ w.r.t. $t$. It is a \emph{function} not a \emph{number}.
+        \item $(\partial_{t} u)(x,t)$ : is the partial derivative of $u$ w.r.t. $t$ at the space-time point $(x,t)$. It is a
+            \emph{number}. 
+    \end{itemize}
+    It's fundamental to undestand the difference between this two statements.
+    
+    For repeated differentiation we use the notation: 
+    \begin{equation*}
+        u_{tt}, u_{tx}, u_{txx}, \dots
+    \end{equation*}
+    and using the differential operator:
+    \begin{equation*}
+        \partial_{t}^2 u, \partial_{tx}u, \partial_{txx}u \dots
+    \end{equation*}
+    
+    
+   \subsection{\sffamily Kinds of PDE's}
+   First we define a \emph{linear equation} as:
+   \begin{equation*}
+       Au_{xx}+Bu_{xy}+Cu_{yy}+Du_{x}+Eu_{y}+Fu=G
+   \end{equation*}
+   Where $A,B,C,D,E,F,G$ are all \emph{constants} or \emph{functions} of the independet variables ($x$ and $y$ ).
+
+   For linear equation the are three basic types:
+   \begin{itemize}
+        \item \emph{Parabolic}: usually describe heat flow and diffusion processes. They satisfy the property $B^2-4AC=0$.
+        \item \emph{Hyperbolic}: usually describe vibrating systems and wave motion. They satisfy the property $B^2-4AC > 0$.
+         \item \emph{Elliptic}: usually describe steady-state phenomena. They satisfy the property $B^2-4AC<0$.
+   \end{itemize}
+   
+    
+\end{document}

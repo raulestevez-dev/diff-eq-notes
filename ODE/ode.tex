@@ -1,0 +1,16 @@
+\documentclass[a4paper, 10pt]{book}
+\input{~/latex/en_preamble.tex}
+
+\begin{document}
+    \pagestyle{main}
+   
+    \begingroup
+    \tableofcontents
+    \let\cleardoublepage\clearpage
+    \endgroup
+
+    \subfile{chapters/one}
+    \subfile{chapters/two}
+    \subfile{chapters/three}
+    \subfile{chapters/four}
+\end{document}

@@ -1,0 +1,77 @@
+\documentclass[../ode.tex]{subfiles}
+\begin{document}
+    \chapter{\sffamily Linear Systems}
+    Let's start stating the any second-order linear differential equation is equivalent to a two unknow function first-order
+    linear system, i.e.:
+    \begin{equation*}
+        ax'' + bx' + cx = 0 \iff 
+        \begin{cases}
+            y=x'\\
+            ay' + by +cx =0
+        \end{cases}  
+    \end{equation*}
+    
+    The general form of a linear system is: 
+
+    \begin{equation*}
+        \begin{cases}
+            x'=ax+by\\
+            y'=cx+dy
+        \end{cases}
+    \end{equation*}
+    
+
+    \section{\sffamily Insight from the equations}
+    
+    As for the first-order linear equations, we can get some visual insight by inspection/ploting without even
+    solving them. Similarly to the slope fields, we can plot the so called \emph{vector field} of the
+    equation just by ploting the function:
+
+    \begin{equation*}
+        \vec{F}(x,y) =\begin{bmatrix} x'\\y' \end{bmatrix}  =\begin{bmatrix} ax+by\\cx+dy \end{bmatrix}\\
+    \end{equation*}
+    
+    This plot gives the tangent vector of the solution in each point of the $xy$ plane. There are two special lines
+    where the tangent vector is either vertial or horizontal, they are called the \emph{nullclines}. The \emph{$x$-nullcline} is
+    the line $ax+by=0$ i.e. where $x'=0$ so the vector field is vertical. IDEM with the \emph{$y$-nullcline}. Note:
+    \emph{null-cline} comes from \emph{in-cline} but \emph{null} because there zero (\emph{null}) incline in one component? Maybe.
+    
+    Now let's assume that we know the solution to the linear system i.e. we have the equations $x(t)$ and $y(t)$. We can plot the
+    solution in two ways: as a time series or as a parametric plot. The former is the simplest and can give information about
+    periocity, they tell us how both the states vary with time. But the latter is the most insteresting because we can think of
+    the solutions as a parametric curve in the $xy$ plane i.e. we plot $\vv{x}(t) = (x(t), y(t))$ and we get an \emph{orbit}. The
+    evolution in time of the orbit can be illustrated by also plotting the vector field for that solution.
+
+    In some ocasions we could alse plot the solution as a \emph{one function} i.e. if we can eliminate the time parameter we can
+    plot the obtained equation as a normal function $y(x)$.
+            
+    \section{\sffamily The eigenvalue problem}
+    
+    We can see that a linear system can be expressed in matrix form as:
+    \begin{equation*}
+        \begin{cases}
+            x' = ax + by\\
+            y' = cx + dy
+        \end{cases}
+        \iff 
+        \begin{bmatrix} a & b \\ c & d \end{bmatrix} \begin{bmatrix} x \\ y  \end{bmatrix} = \begin{bmatrix} x' \\ y' \end{bmatrix} 
+        \iff
+        A\vv{x} = \vv{x}' 
+    \end{equation*}
+    
+    As the derivative of the solution involves multiples of the solution function, we can attemp to find one of the form:
+    \begin{equation*}
+        x(t) = \vv{v} \mathrm{e}^{\lambda t} 
+    \end{equation*}
+    Where $\vv{v} $ and $\lambda$ are constant. Substituting this and its derivative $x'(t)=\lambda \vv{v} \mathrm{e}^{\lambda t} $
+    in the equation in matrix form gives:
+    \begin{gather*}
+        A\vv{x} = \vv{x}' \implies A\vv{v} \mathrm{e}^{\lambda t} = \lambda \vv{v} \mathrm{e}^{\lambda t} \iff A\vv{v} = \lambda
+        \vv{v} 
+    \end{gather*}
+      
+    And this is a classic \emph{eigenvalue problem}. And if we can find the \emph{eigenpair} $(\vv{v}, \lambda)$ we have the
+    solution to the linear system as $\vv{x} = \vv{v} \mathrm{e}^{\lambda t} $. We have transformed the problem of solving a
+    differential equation to one of solving an algebraic problem.
+    
+\end{document}

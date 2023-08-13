@@ -1,0 +1,100 @@
+\documentclass[../ode.tex]{subfiles}
+\begin{document}
+    \chapter{\sffamily Second-Order Linear Equations}
+    
+    In this chapter we study DE's of the type:
+    \begin{equation*}
+        ax'' + bx' + c = f(t)
+    \end{equation*}
+    
+    This type of equation is of great use in chassical mechanics and electrical circuit, as they serve as prototypes for
+    oscillationg systems, oscillation systems with damping and forced vibrations.
+
+    \section{\sffamily Equations with constant coeficients}
+
+    As with first-order ODE we have that:
+    \begin{equation*}
+        ax'' + bx' +cx = 0
+    \end{equation*}
+    is called an \emph{homogeneous linear equation with constant coeficients}. The \emph{homogeneous} part refers to the fact that
+    the RHS is equal to zero.
+
+    When we have also that:
+    \begin{equation*}
+        x(0) = x_0 \quad x'(0) = x_1
+    \end{equation*}
+    we are faced with an \emph{initial value problem} (IVP).
+    
+    \subsection{\sffamily Constant coeficients interpretation}
+    Let's interpret the equation:
+    \begin{equation*}
+        mx'' + \gamma x' + kx =0 \iff LI'' + RI' + \frac{1}{C}I = 0
+    \end{equation*}
+    These are the equations for the damped spring and the LCR circuit. The constant coneficients: $m/L$,$\gamma/R$ and
+    $k/\frac{1}{C}$ have a physical interpretation:
+    \begin{itemize}
+        \item  $m/L \longrightarrow$ It's the inertial term: in mechanics is the \emph{mass} and in LCR oscillator is the
+            \emph{inductance} 
+        \item  $\gamma / R\longrightarrow$ It's the dissipation or energy loss term: is analogous to the resistance or damping.
+        \item  $k/ \frac{1}{C}\longrightarrow$ It's the energy storage term: is analogous to the (inverse) capacitance and the
+            spring constant.
+    \end{itemize}
+ 
+    \subsection{\sffamily Solutions}
+    
+    \begin{thm}{Existence-Uniqueness}{SO-ex-un}
+        The initial value problem given by:
+        \begin{equation*}
+            \begin{cases}
+                ax''+bx'+cx = 0\\
+                x(0) = x_0\\
+                x'(0) = x_1
+            \end{cases}
+        \end{equation*}        
+        has a unique solution that exist on $-\infty<t<\infty$. That means that an \emph{homogeneous} linear IVP has a unique
+        solution for all reals.
+    \end{thm}
+
+    But, how do we find such solutions? This type of equations have a solution of the form:
+    \begin{equation*}
+        x(t) =c_1 x_1(t) + c_2 x_2(t)
+    \end{equation*}
+    Where $x_1(t)$ and $x_1(t)$ are independt (not multiple of each other) solutions.
+
+    We can spect the solution to be of the form $x(t)=\mathrm{e}^{\lambda t} $ because the
+    terms in the equation involve the derivatives of the solution multiplied by a constant. If we substitute $\mathrm{e}^{\lambda
+    t} $ in the general equation we get:
+    \begin{equation*}
+        a\lambda^{2} + b\lambda + c =0 
+    \end{equation*}
+    that equation is called the \emph{characteristic equation}, and it's solutions \emph{eigenvalues}. Each value of $\lambda$
+    gives a solution $\mathrm{e}^{\lambda t} $ to the equation. As any second-order equation it can have real or complex conjugate
+    solutions, let's see what happends with the complex solutions.
+
+    \subsection{\sffamily Complex eigenvalues}
+
+    \begin{thm}{Complex eigenvalues}{complex-eigenvalues}
+        If $x(t) = g(t) + j h(t)$ is a complex-valued solution of a second-order LDE then it's real and imaginary parts ($g(t)$
+        and $h(t)$ respectively) are real valued solutions.
+    \end{thm}
+     
+    So, let's study the solution $x(t)=\mathrm{e}^{\lambda t}=\mathrm{e}^{(\alpha + j\beta) t}$, using Euler's formula:
+    \begin{equation*}
+        \mathrm{e}^{(\alpha + j\beta) t} = \mathrm{e}^{\alpha t} \mathrm{e}^{j\beta t} = \mathrm{e}^{\alpha t} (\cos(\beta t) + j
+        \sin(\beta t)) = \mathrm{e}^{\alpha t }\cos(\beta t) + j \mathrm{e}^{\alpha t} \sin(\beta t)
+    \end{equation*}
+    So, using the previous theorem we can conclude that:
+    \begin{equation*}
+        x_1(t) = \mathrm{e}^{\alpha t} \cos(\beta t) \quad x_2(t) = \mathrm{e}^{\alpha t} \sin(\beta t)
+    \end{equation*}
+    are both \emph{real-valued} solutions to the equation. The other comples root can be proven to give the same solutions (only
+    difering in a sign, but they are the same \emph{independent} solutions).
+    
+    
+
+    \subsection{\sffamily Resonance}
+    
+    The phenomenon of \emph{resonance} is a key element of vibrating systems. It occurst when the \emph{frequency} of a forcing
+    term has the same frequency as the natural oscillations in the system. It gives rise to large amplitude oscillations. In the
+    book they only give examples, boring to write in \LaTeX.
+\end{document}

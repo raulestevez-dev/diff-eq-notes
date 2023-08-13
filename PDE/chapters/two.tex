@@ -1,0 +1,83 @@
+\documentclass[../pde.tex]{subfiles}
+\begin{document}
+    \chapter{\sffamily Diffusion-Type Problems}
+    First lets start by interpreting one of the most simple PDE's, the one dimensional \emph{heath equation}.
+    \subsection{\sffamily Interpretation of the heat equation}
+    First let's state the problem that we want to solve. Imagine a straight bar of metal. The position in the bar is modeled by
+    the independet variable $x$ and time with $t$. The function $u(x,t)$ models the distribution of temperature in the bar at the
+    point $x$ and time $t$. We can see this function in two forms. As a surface in the $xt$ plane such that for every time $t_0$ 
+    we have a function $u(x)$ that represents the distribution of temperatures in the bar. Or we can conceptually thing of
+    $u(x,t)$ as a animation of a a function $u(x)$ that changes form as the animation advances.
+
+    \begin{figure}[ht]
+        \centering
+        \incfig[1]{xt-heath}
+        \caption{Visualization of $u(x,t)$ as a surface in the $xt$ plane. We can think of the function evolving in time as we
+        travel through the $t$ line.}
+        \label{fig:xt-heath}
+    \end{figure}
+
+    The one dimensional heath equation is a \emph{parabolic} equation of the form:
+    \begin{equation*}
+        u_{t}=\alpha^2 u_{xx}; \quad 0<x<L,\quad  0<t<\infty 
+    \end{equation*}
+    
+    which relates the quantites:
+    \begin{itemize}
+        \item $u_{t} = $ the rate of change of the temperature of a point as time advances.
+        \item $u_{xx} = $ the \emph{concavity} of the temperature distribution at the point $(x,t)$. 
+    \end{itemize}
+    
+    What this equation tries to say is that the temperature $u(x,t)$ will increase or decrease accoding to whether $u_{xx}$ 
+    is positive or negative.
+
+    \subsection{\sffamily Interpretation of $\mathbf{u_{xx}}$}
+    To interpret $u_{xx}$ lets steer to the numerical methods. Imagine that we have a discreet rod of metal (or a discreet number
+    of thermocouples measuring the temperature of a continuos rod) with a temperature distribution $u(x_n,t)$. We can model second
+    derivatives as a  (central) \emph{finite diference}:
+    \begin{equation*}
+        u_{xx}(x_n,t) = \frac{1}{h^2}[u(x_{n+1},t) - 2u(x_n,t) + u(x_{n-1},t)]
+    \end{equation*}
+    We can rearrange that to give:
+    \begin{equation}\label{num-2-deriv}
+        u_{xx}(x_n,t) = \frac{2}{h^2}\left[\frac{u(x_{n+1},t)+u(x_{n-1},t)}{2}-u(x_n,t)\right]
+    \end{equation}
+    
+    This lets us study the sign of $u_{xx}$ as the difference between the \emph{average} of the temperature arround the current point
+    and the temperature of the current point.
+    \begin{itemize}
+        \item If the \emph{average is larger} than the temperature of the current point, then $u_{xx}$ will be positive. 
+            So the temperture of the current point will increase with
+            time (as $u_{xx} > 0 \implies u _{t}>0$ with the heath equation).
+        \item If the \emph{average is lower} than the temperature of the point then the reverse happens: $u_{xx} < 0 $ and the 
+            temperature of the point tends to decrease.
+    \end{itemize}
+
+    If we keep rearranging \eqref{num-2-deriv} we arrive to:
+
+    \begin{align*}
+        u_{xx} &= \frac{1}{h^2} \left[ u(x_{n+1},t) - u(x_{n},y) + u(x_{n-1},t) - u(x_{n},t)  \right] \\
+               &= \frac{1}{h^2} \left[ \Delta u - \nabla u \right] 
+    \end{align*}
+        
+    Where $\Delta$ and $\nabla$ are the forward and backward difference operators, respectivly.
+
+    We can interpret this as the rate of change of the rate of change i.e. $\Delta u$ tells us how the temperature changes
+    relative to the next point, and $\nabla u$ tells us how the temperature changes relative to the previous point. So the
+    difference between this rates of change will tell us how the rate of change ($u_x$) changes.\\
+    If it is positive then the function at that point is concave up 
+    (like $\cup$) and so the temperature will tend to rise to equalice with it's vecinity. The reverse is also true, if the
+    difference is negative it means that the function is concave down (like $\cap$ ) so the temperature will tend to decrease,
+    givin it's energy to it's neighbors. The \emph{sign} of $u_{xx}$ tells the direction of the flux of energy i.e. if the point
+    is gaining energy: $u_{xx}>0$; or if it's losing it: $u_{xx}<0$.
+
+    \begin{figure}[ht]
+        \centering
+        \incfig[1]{uxx}
+        \caption{This figure illustrates the tendency of the temperature at the points where the function is concave up and down.}
+        \label{fig:uxx}
+    \end{figure}
+    
+    
+
+\end{document}

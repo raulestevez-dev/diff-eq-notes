@@ -1,0 +1,103 @@
+\documentclass[../ode.tex]{subfiles}
+\begin{document}
+    \chapter{\sffamily Numerical methods}
+    
+    \section{\sffamily Euler Method}
+    Here I will show three derivations of the \emph{Euler Method}: geometric, Taylor series, Fundamental Theorem of calculus.
+
+    In every derivation we'll be trying to solve numericaly the following initial value problem:
+    \begin{equation*}
+        \begin{cases}
+            x'=f(t,x)\\
+            x(t_0) = x_0
+        \end{cases}
+    \end{equation*}
+    And assume that it has a solution in a interval $[t_0,T]$. We then partition such interval in $N$ parts of length $h$ to give
+    $N+1$ time instants such that: $t_{n+1} = t_{n} + h$ or $t_n = t_0+nh$.
+    
+    \subsection{\sffamily Geometric derivation}
+    
+    With the geometrical derivation we start by noting that for $t_0$ we can compute the value of the derivative $x'(t_0)$ as
+    $x'(t_0) = f(t_0,x_0)$. This gives us the slope of the solution at that point i.e. the first order approximation of the
+    solution (by a straight line). If we then assume that for a little deviation in $t$, say $t_0+h$, the solution stays in the
+    line with the slope given by the derivative, we can compute the value of the solution there as:
+    \begin{equation*}
+        x(t_0+h) = x(t_0) + hx'(t_0) \iff x(t_0 + h) = x(t_0) + f(t_0, x(t_0)) h
+    \end{equation*}
+    Because with these assumptions $hx'(t_0)$ gives how much does the solution increase from $t_0$ to $t_0+h$. If we then repeat
+    this process for every $t_n \in [t_0,T]$ we have numerically computed the solution to the DE with the \emph{Euler method}. 
+
+    We have, generally:
+    \begin{equation*}
+        x(t_{n+1}) = x(t_n) + f(t_n, x(t_n)h) + O(h^{2})
+    \end{equation*}
+    
+    The second order error term will be explained in next section.
+
+    \begin{figure}[ht]
+        \fontsize{7}{7}\centering
+        \incfig[1]{euler-geo}
+        \caption{Graphical representation of the geometric derivation. We can see the approximation made with a straight line and
+        how we obtain the next value in the solution}
+        \label{fig:euler-geo}
+    \end{figure}
+    
+    \subsection{\sffamily Taylor series derivation}
+    
+    We can arrive to the same method by the Taylor series expansion of the solution centered at $t_{n} $  
+    truncated at the second order term. This is the same as approximating the solution as a straight line that passes
+    though $t_{n} $ and has a slope aqual to the derivative of the solution at that point i.e. $x'(t_{n} ) $. This gives us:
+    \begin{equation*}
+        x(t) = x(t_{n}) + x'(t_{n} )(t-t_{n} ) + O(h^2)
+    \end{equation*}
+
+    With this approximation we can compute the value of $x(t_{n+1})$ as:
+    \begin{equation*}
+        x(t_{n+1}) = x(t_n) + x'(t_n)h + O(h^2)
+    \end{equation*}
+    And solving for $x'(t_{n})$ (this is the deffinition of the \emph{forward difference}):
+    \begin{equation*}
+        x'(t_n) = \frac{x(t_{n+1})-x(t_n)}{h} + O(h^2)
+    \end{equation*}
+    
+    If we see the origina IVP we can se that $x'(t_n) = f(t_n, x(t_n))$, then:
+    \begin{equation*}
+        x'(t_n) = f(t_n, x(t_n)) \iff \frac{x(t_{n+1})-x(t_n)}{h} + O(h^2) = f(t_n, x(t_n)) \iff 
+        x(t_{n+1}) = x(t_{n}) + h f(t_{n},x(t_{n})) + O(h^2)
+    \end{equation*}
+    
+
+
+    And we have arrive at the same equation for the \emph{Euler method}. Note that as we have truncated the series expansion in
+    the second term we have a $O(h^2)$ term representing the \emph{local error} i.e. the error of each interation. This error is
+    of \emph{order} $2$ for $h<1$. That means that if we reduce the step size twofold the error reduces by a factor of $4$, and if
+    we decrease $h$ tenfold, the error reduces by $10^2= 100$.
+
+    \subsection{\sffamily Fundamental Theorem of Calculus derivation}
+    
+    This is a derivation that enable us to use more exact methods to compute the solution. We start by taking the integral of the
+    DE over an interval $[t_{n}, t_{n+1}]$ :
+    \begin{equation*}
+        \int_{t_{n}}^{t_{n+1}} x'(t) \diff t = \int_{t_{n}}^{t_{n+1}} f(t,x(t)) \diff t
+    \end{equation*}
+    The LHS can be solved using the Fundamental Theorem of Calculus giving us:
+    \begin{equation*}
+        x(t_{n+1}) - x(t_{n}) = \int_{t_{n}}^{t_{n+1}} f(t,x(t)) \diff t
+    \end{equation*}
+    To arrive to the same equation as the \emph{Euler method} we need to use the rectangular aproximation to compute the integral.
+    This gives us:
+    \begin{equation*}
+        x(t_{n+1}) = x(t_{n}) + h f(t_{n},x(t_{n}))
+    \end{equation*}
+    As this is still the original \emph{Euler method} it has an error of $O(h^2)$. But this derivation enables us to use wathever
+    method we want to compute the integral. And as this integral is the only source of error, if we use a method with lesser error
+    we will obtain smaller error in the solution of the DE.
+    
+    \subsection{\sffamily Local an Global truncating error}
+    
+    We have shown that the \emph{local truncating error} is of the order of $h^2$ i.e. $O(h^2)$ for small $h<1$. We can see that
+    the number of iterations $N$ is equall to $N=\frac{t_o - T}{h}$ that is of order $h$. That means that (informally but
+    correctly) after $N$ iterations i.e. in the last point of the interval $[t_0, T]$, the \emph{global truncating error} is of
+    ordern $h$ i.e. $O(h)$.
+    
+\end{document}
