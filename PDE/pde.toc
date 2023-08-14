@@ -1,7 +1,7 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{\numberline {1}\sffamily Introduction to Partial Differential Equations}{3}{}%
-\contentsline {section}{\numberline {1.1}\sffamily Notation}{3}{}%
-\contentsline {subsection}{\numberline {1.1.1}\sffamily Kinds of PDE's}{3}{}%
-\contentsline {chapter}{\numberline {2}\sffamily Diffusion-Type Problems}{5}{}%
-\contentsline {subsection}{\numberline {2.0.1}\sffamily Interpretation of the heat equation}{5}{}%
-\contentsline {subsection}{\numberline {2.0.2}\sffamily Interpretation of $\mathbf {u_{xx}}$}{5}{}%
+\contentsline {chapter}{\numberline {1}\sffamily Introduction to Partial Differential Equations}{2}{}%
+\contentsline {section}{\numberline {1.1}\sffamily Notation}{2}{}%
+\contentsline {subsection}{\numberline {1.1.1}\sffamily Kinds of PDE's}{2}{}%
+\contentsline {chapter}{\numberline {2}\sffamily Diffusion-Type Problems}{3}{}%
+\contentsline {subsection}{\numberline {2.0.1}\sffamily Interpretation of the heat equation}{3}{}%
+\contentsline {subsection}{\numberline {2.0.2}\sffamily Interpretation of $\mathbf {u_{xx}}$}{3}{}%

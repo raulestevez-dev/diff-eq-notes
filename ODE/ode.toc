@@ -1,27 +1,27 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{\numberline {1}\sffamily The Basics}{3}{}%
-\contentsline {section}{\numberline {1.1}\sffamily Antiderivatives}{3}{}%
-\contentsline {subsubsection}{\sffamily Functions defined from integrals}{3}{}%
-\contentsline {section}{\numberline {1.2}\sffamily Separable equations}{4}{}%
-\contentsline {section}{\numberline {1.3}\sffamily Linear equations}{4}{}%
-\contentsline {section}{\numberline {1.4}\sffamily One-Dimensional Dynamical Systems}{5}{}%
-\contentsline {subsection}{\numberline {1.4.1}\sffamily Autonomous Equations}{5}{}%
-\contentsline {subsection}{\numberline {1.4.2}\sffamily Phase Line}{5}{}%
-\contentsline {subsection}{\numberline {1.4.3}\sffamily Analytic Study}{5}{}%
-\contentsline {subsection}{\numberline {1.4.4}\sffamily Bifurcation}{6}{}%
-\contentsline {section}{\numberline {1.5}\sffamily Existence of solutions}{7}{}%
-\contentsline {chapter}{\numberline {2}\sffamily Second-Order Linear Equations}{9}{}%
-\contentsline {section}{\numberline {2.1}\sffamily Equations with constant coeficients}{9}{}%
-\contentsline {subsection}{\numberline {2.1.1}\sffamily Constant coeficients interpretation}{9}{}%
-\contentsline {subsection}{\numberline {2.1.2}\sffamily Solutions}{9}{}%
-\contentsline {subsection}{\numberline {2.1.3}\sffamily Complex eigenvalues}{10}{}%
-\contentsline {subsection}{\numberline {2.1.4}\sffamily Resonance}{10}{}%
-\contentsline {chapter}{\numberline {3}\sffamily Linear Systems}{11}{}%
-\contentsline {section}{\numberline {3.1}\sffamily Insight from the equations}{11}{}%
-\contentsline {section}{\numberline {3.2}\sffamily The eigenvalue problem}{11}{}%
-\contentsline {chapter}{\numberline {4}\sffamily Numerical methods}{13}{}%
-\contentsline {section}{\numberline {4.1}\sffamily Euler Method}{13}{}%
-\contentsline {subsection}{\numberline {4.1.1}\sffamily Geometric derivation}{13}{}%
-\contentsline {subsection}{\numberline {4.1.2}\sffamily Taylor series derivation}{13}{}%
-\contentsline {subsection}{\numberline {4.1.3}\sffamily Fundamental Theorem of Calculus derivation}{14}{}%
-\contentsline {subsection}{\numberline {4.1.4}\sffamily Local an Global truncating error}{14}{}%
+\contentsline {chapter}{\numberline {1}\sffamily The Basics}{2}{}%
+\contentsline {section}{\numberline {1.1}\sffamily Antiderivatives}{2}{}%
+\contentsline {subsubsection}{\sffamily Functions defined from integrals}{2}{}%
+\contentsline {section}{\numberline {1.2}\sffamily Separable equations}{3}{}%
+\contentsline {section}{\numberline {1.3}\sffamily Linear equations}{3}{}%
+\contentsline {section}{\numberline {1.4}\sffamily One-Dimensional Dynamical Systems}{4}{}%
+\contentsline {subsection}{\numberline {1.4.1}\sffamily Autonomous Equations}{4}{}%
+\contentsline {subsection}{\numberline {1.4.2}\sffamily Phase Line}{4}{}%
+\contentsline {subsection}{\numberline {1.4.3}\sffamily Analytic Study}{4}{}%
+\contentsline {subsection}{\numberline {1.4.4}\sffamily Bifurcation}{5}{}%
+\contentsline {section}{\numberline {1.5}\sffamily Existence of solutions}{6}{}%
+\contentsline {chapter}{\numberline {2}\sffamily Second-Order Linear Equations}{8}{}%
+\contentsline {section}{\numberline {2.1}\sffamily Equations with constant coeficients}{8}{}%
+\contentsline {subsection}{\numberline {2.1.1}\sffamily Constant coeficients interpretation}{8}{}%
+\contentsline {subsection}{\numberline {2.1.2}\sffamily Solutions}{8}{}%
+\contentsline {subsection}{\numberline {2.1.3}\sffamily Complex eigenvalues}{9}{}%
+\contentsline {subsection}{\numberline {2.1.4}\sffamily Resonance}{9}{}%
+\contentsline {chapter}{\numberline {3}\sffamily Linear Systems}{10}{}%
+\contentsline {section}{\numberline {3.1}\sffamily Insight from the equations}{10}{}%
+\contentsline {section}{\numberline {3.2}\sffamily The eigenvalue problem}{10}{}%
+\contentsline {chapter}{\numberline {4}\sffamily Numerical methods}{12}{}%
+\contentsline {section}{\numberline {4.1}\sffamily Euler Method}{12}{}%
+\contentsline {subsection}{\numberline {4.1.1}\sffamily Geometric derivation}{12}{}%
+\contentsline {subsection}{\numberline {4.1.2}\sffamily Taylor series derivation}{12}{}%
+\contentsline {subsection}{\numberline {4.1.3}\sffamily Fundamental Theorem of Calculus derivation}{13}{}%
+\contentsline {subsection}{\numberline {4.1.4}\sffamily Local an Global truncating error}{13}{}%

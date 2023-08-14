@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.5)  13 AUG 2023 17:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.5)  14 AUG 2023 18:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,10 +6,10 @@ entering extended mode
 **pde.tex
 (./pde.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@chapter=\count186
@@ -599,7 +599,7 @@ LaTeX Font Info:    ... okay on input line 7.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
+* modes: 
 * h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
 * v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
@@ -608,21 +608,21 @@ LaTeX Font Info:    ... okay on input line 7.
 * \textheight=731.23584pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
-* \topmargin=-45.43198pt
+* \topmargin=-52.36449pt
 * \headheight=12.0pt
-* \headsep=18.06749pt
+* \headsep=25.0pt
 * \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=115.0pt
-* \marginparsep=7.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -664,9 +664,7 @@ File: uesint.fd
  (./chapters/one.tex [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
-
-]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Chapter 1.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 3.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
@@ -675,36 +673,38 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)) (./chapters/two.tex [3] [4
+)) (./chapters/two.tex [2
 
 ]
 Chapter 2.
 (./figures/xt-heath.pdf_tex
-<./figures//xt-heath.pdf, id=39, page=1, 483.69685pt x 142.26378pt>
+<./figures//xt-heath.pdf, id=31, page=1, 483.69685pt x 142.26378pt>
 File: ./figures//xt-heath.pdf Graphic file (type pdf)
 <use ./figures//xt-heath.pdf, page 1>
 Package pdftex.def Info: ./figures//xt-heath.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 142.2656pt.
-) [5 <./figures//xt-heath.pdf>] (./figures/uxx.pdf_tex
-<./figures//uxx.pdf, id=47, page=1, 483.69685pt x 142.26378pt>
+) [3
+
+ <./figures//xt-heath.pdf>] (./figures/uxx.pdf_tex
+<./figures//uxx.pdf, id=39, page=1, 483.69685pt x 142.26378pt>
 File: ./figures//uxx.pdf Graphic file (type pdf)
 <use ./figures//uxx.pdf, page 1>
 Package pdftex.def Info: ./figures//uxx.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 142.2656pt.
-)) [6 <./figures//uxx.pdf>] (./pde.aux) ) 
+)) [4 <./figures//uxx.pdf>] (./pde.aux) ) 
 Here is how much of TeX's memory you used:
- 22291 strings out of 480112
- 459652 string characters out of 5892632
- 791113 words of memory out of 5000000
- 39757 multiletter control sequences out of 15000+600000
+ 22290 strings out of 480112
+ 459694 string characters out of 5892632
+ 791019 words of memory out of 5000000
+ 39756 multiletter control sequences out of 15000+600000
  488261 words of font info for 93 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  93i,15n,95p,566b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/abby/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on pde.pdf (6 pages, 194396 bytes).
+Output written on pde.pdf (4 pages, 192858 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
+ 131 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
