@@ -8,3 +8,6 @@ rather than in pure solution computing. I found this book to be very light to re
 even more to engineers that have a little background in ODEs and want to understand why they are they appear everywhere.
 # PDE notes
 The PDE notes are WIP. The book I'm following is "Partial Differential Equations for Scientist and Engineers" by Stanley J. Farlow. 
+# Compilation
+Im using pdfTeX 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) with  TeX Live as TeX distribution.
+If you want to compile you'll need my english preamble (found in my dotfiles repo), and change the path of the preamble in the main .tex
