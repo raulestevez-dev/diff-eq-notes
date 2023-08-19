@@ -1,4 +1,4 @@
-PWD /home/abby/notes/diff-eq-notes/PDE
+PWD /home/abby/notes/my-notes/PDE
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
@@ -1107,6 +1107,21 @@ INPUT ./figures/xt-heath.pdf_tex
 INPUT ./figures/xt-heath.pdf_tex
 INPUT ./figures/xt-heath.pdf_tex
 INPUT ./figures/xt-heath.pdf_tex
+INPUT ./figures//xt-heath.pdf
+INPUT ./figures//xt-heath.pdf
+INPUT ./figures//xt-heath.pdf
+INPUT ./figures//xt-heath.pdf
+INPUT ./figures//xt-heath.pdf
+INPUT ./figures//xt-heath.pdf
+INPUT ./figures//xt-heath.pdf
+INPUT ./figures//xt-heath.pdf
+INPUT ./figures//xt-heath.pdf
+INPUT ./figures//xt-heath.pdf
+INPUT ./figures//xt-heath.pdf
+INPUT ./figures//xt-heath.pdf
+INPUT ./figures//xt-heath.pdf
+INPUT ./figures//xt-heath.pdf
+INPUT ./figures//xt-heath.pdf
 INPUT ./figures//xt-heath.pdf
 INPUT ./figures//xt-heath.pdf
 INPUT ./figures//xt-heath.pdf

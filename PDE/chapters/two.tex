@@ -2,11 +2,11 @@
 \begin{document}
     \chapter{\sffamily Diffusion-Type Problems}
     First lets start by interpreting one of the most simple PDE's, the one dimensional \emph{heath equation}.
-    \subsection{\sffamily Interpretation of the heat equation}
+    \section{\sffamily Interpretation of the heat equation}
     First let's state the problem that we want to solve. Imagine a straight bar of metal. The position in the bar is modeled by
     the independet variable $x$ and time with $t$. The function $u(x,t)$ models the distribution of temperature in the bar at the
     point $x$ and time $t$. We can see this function in two forms. As a surface in the $xt$ plane such that for every time $t_0$ 
-    we have a function $u(x)$ that represents the distribution of temperatures in the bar. Or we can conceptually thing of
+    we have a function $u(x)$ that represents the distribution of temperatures in the bar. Or we can conceptually think of
     $u(x,t)$ as a animation of a a function $u(x)$ that changes form as the animation advances.
 
     \begin{figure}[ht]
@@ -35,13 +35,12 @@
     To interpret $u_{xx}$ lets steer to the numerical methods. Imagine that we have a discreet rod of metal (or a discreet number
     of thermocouples measuring the temperature of a continuos rod) with a temperature distribution $u(x_n,t)$. We can model second
     derivatives as a  (central) \emph{finite diference}:
-    \begin{equation*}
-        u_{xx}(x_n,t) = \frac{1}{h^2}[u(x_{n+1},t) - 2u(x_n,t) + u(x_{n-1},t)]
-    \end{equation*}
-    We can rearrange that to give:
     \begin{equation}\label{num-2-deriv}
-        u_{xx}(x_n,t) = \frac{2}{h^2}\left[\frac{u(x_{n+1},t)+u(x_{n-1},t)}{2}-u(x_n,t)\right]
+        u_{xx}(x_n,t) = \frac{1}{h^2}[u(x_{n+1},t) - 2u(x_n,t) + u(x_{n-1},t)]
     \end{equation}
+    We can rearrange that to give:
+    \begin{equation*}        u_{xx}(x_n,t) = \frac{2}{h^2}\left[\frac{u(x_{n+1},t)+u(x_{n-1},t)}{2}-u(x_n,t)\right]
+    \end{equation*}
     
     This lets us study the sign of $u_{xx}$ as the difference between the \emph{average} of the temperature arround the current point
     and the temperature of the current point.
@@ -64,8 +63,9 @@
 
     We can interpret this as the rate of change of the rate of change i.e. $\Delta u$ tells us how the temperature changes
     relative to the next point, and $\nabla u$ tells us how the temperature changes relative to the previous point. So the
-    difference between this rates of change will tell us how the rate of change ($u_x$) changes.\\
-    If it is positive then the function at that point is concave up 
+    difference between this rates of change will tell us how the rate of change ($u_x$) changes as we move in the bar from left to
+    right.\\
+    If this double rate of change is positive then the function at that point is concave up 
     (like $\cup$) and so the temperature will tend to rise to equalice with it's vecinity. The reverse is also true, if the
     difference is negative it means that the function is concave down (like $\cap$ ) so the temperature will tend to decrease,
     givin it's energy to it's neighbors. The \emph{sign} of $u_{xx}$ tells the direction of the flux of energy i.e. if the point
@@ -77,7 +77,36 @@
         \caption{This figure illustrates the tendency of the temperature at the points where the function is concave up and down.}
         \label{fig:uxx}
     \end{figure}
+
+    \section{\sffamily Boundary and Initial conditions}
     
+    Following with the example of the metal rod, we need to state what happens at the boundary of such rod. Does it lose
+    temperature from its ends? Does it maintain a fixed temperature? This statements are called the \emph{boundary conditions},
+    they say how our model behaves at its domain baoundary.\\
+    All systems must start from some value of time (usually $t=0$, we can think of it as the time at which we begin to measure)
+    and so we need to declare the state of the system at that point, this is called the \emph{initial condition}.
+
+    If we have a boundary condition and a initial condition we have what is called an \emph{initial-boundary-value problem
+    (IBVP)}.
+    In the rod example we can have, let say, a fixed temperature at the ends of $T_1$ and $T_2$ respectively and a initial
+    temperature of $T_0$ in all of rod. So the full problem would be:
+    
+    \begin{align*}
+        &\text{PDE} \quad u_{t} = \alpha^2 u_{xx} \quad 0<x<L \quad 0<t<\infty \\[1em]
+        &\text{BCs} \quad 
+        \begin{cases}
+            u(0,t) = T_1\\
+            u(L,t) = T_2
+        \end{cases} 
+        0< t<\infty \\[1em]
+        &\text{IC} \quad u(x,0) = T_0 \quad 0\le x \le L
+    \end{align*}
+
+
+    \section{\sffamily Boundary conditions to diffusion type problems}
+    
+    
+   
     
 
 \end{document}

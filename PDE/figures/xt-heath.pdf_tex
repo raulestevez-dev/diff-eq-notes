@@ -1,4 +1,4 @@
-%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
+%% Creator: Inkscape 1.3 (1:1.3+202307231459+0e150ed6c4), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'xt-heath.pdf' (pdf, eps, ps)
 %%
@@ -54,8 +54,14 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{xt-heath.pdf}}%
-    \put(0.70282957,0.02080529){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x$\end{tabular}}}}%
-    \put(0.29009167,0.25292074){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u$\end{tabular}}}}%
-    \put(0.49712872,0.24144867){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$t$\end{tabular}}}}%
+    \put(0.9387635,0.0526764){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x$\end{tabular}}}}%
+    \put(0.60920954,0.23801091){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{xt-heath.pdf}}%
+    \put(0.35967283,0.0526764){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x$\end{tabular}}}}%
+    \put(0.03011883,0.23801091){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u$\end{tabular}}}}%
+    \put(0.19542927,0.22885094){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$t$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{xt-heath.pdf}}%
+    \put(0.47521074,0.14731287){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}At time $t_0$\\\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{xt-heath.pdf}}%
   \end{picture}%
 \endgroup%
