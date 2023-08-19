@@ -7,3 +7,5 @@
 \contentsline {subsection}{\numberline {2.1.1}\sffamily Interpretation of $\mathbf {u_{xx}}$}{3}{}%
 \contentsline {section}{\numberline {2.2}\sffamily Boundary and Initial conditions}{4}{}%
 \contentsline {section}{\numberline {2.3}\sffamily Boundary conditions to diffusion type problems}{5}{}%
+\contentsline {subsection}{\numberline {2.3.1}\sffamily Temperature of the boundaries}{5}{}%
+\contentsline {subsection}{\numberline {2.3.2}\sffamily Flux specified}{5}{}%
