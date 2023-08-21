@@ -18,4 +18,6 @@ The PDE notes are WIP. The book I'm following is "Partial Differential Equations
 
 # Compilation
 Im using pdfTeX 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) with  TeX Live as TeX distribution.
-If you want to compile you'll need my english preamble (found in my dotfiles repo), and change the path of the preamble in the main .tex
+If you want to compile you'll need my english preamble (found in my dotfiles repo), and change the path of the preamble in the main .tex.
+
+You also have the compiled .pdf file in each folder.

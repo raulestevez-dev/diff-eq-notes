@@ -108,12 +108,59 @@
     There are two main types of boundary conditions for diffusion type problems: Temperature of the boundaries or flux specified. 
     \subsection{\sffamily Temperature of the boundaries}
     It's what we did in the rod example, we mantained a constant temperature in the ends of the rod (the boundary). In general the
-    temperature at the boundary can be a function of time and/or space. It can even be the case that we want to find the boundary
+    temperature at the boundary can be a function of time. It can even be the case that we want to find the boundary
     temperatures that will force the temperature of the object to act in a suitable maner. 
+
+    So we can force the ends of the rod to be at a temperature given by the functions $g_{1}(t)$ and $g_{2}(t)$.
 
     \subsection{\sffamily Flux specified}
     
+    \subsection{\sffamily Definition of Flux}
+    There exist two definitions for flux, one used in transport problems (heat transfer, mass transfer, fluid dynamics...) and
+    another used in electromagnetism. Here we are using the transport definition.
+
+    Flux is defined as \emph{the rate of flow of a propertie per unit area}, so it has dimenstions of \emph{[quantity]}$\cdot$
+    \emph{[time]$^{-1}$} $\cdot$ \emph{[meter] $^{-2}$}. For example, the flow of a river is the amount of \emph{liters} that
+    the river passes in one \emph{second}. And its \emph{flux} is then the \emph{flow} of the river per unit area of the cross
+    section of the river. 
+
+    \subsection{\sffamily Fourier's Law}
+     \begin{figure}[ht]
+        \centering
+        \incfig[1]{heat-flow}
+        \caption{Direction of heat flow in two points. When the derivative is $<0$ when interprete that the flux is positive i.e.
+        energy is entering the point to raise it's temperature and reach an equilibrium.}
+        \label{fig:heat-flow}
+    \end{figure}
+    
+    One expression for the \emph{heat flux} is given by \emph{Fourier's Law} in two dimensions:
+    \begin{equation}\label{furier-law}
+        \phi_{q} = -\mathrm{k} \partial_{x} u
+    \end{equation}
+    And as a flux $\phi _{q}$ has units of $\mathrm{\frac{J}{s \cdot m}}$ or what is the same $\mathrm{\frac{W}{m}}$ (in the three
+    dimensional case it has units with square meters, not meters). Here $\mathrm{k}$ is the \emph{thermal conductivity}, the measure
+    of the ability of the material to conduct heat, with units of $\mathrm{\frac{W}{K}}$ (In the three dimensional case:
+    $\mathrm{\frac{W}{m\cdot K}}$).
+    
+    The interpretation is that where the temperature if falling ($u_{x}<0$ ) heath will enter the zone ($\phi_{q} > 0)$  to reach 
+    equilibrium.
+
    
+    
+    \subsection{\sffamily Newton's law of cooling}
+    The discreet analog of the \emph{Fourier's Law}  is the \emph{Newton's law of cooling}. This law can be derived from the
+    Fourier's law by seting the temperature function as the sum of two coliding heavyside functions with diferent temperatures and
+    solving the equations (i think?). In this version it states that the \emph{heat flux} between two objects with temperatures
+    $T_{1}$ and $T_{2}$ is:
+    \begin{equation}\label{newton-cooling}
+        \phi_{q} = h(T_{2}-T_{1})
+    \end{equation}
+    That means that the \emph{heat flux}  between two objects is proportional to the temperature difference between the two.
+    Usually one of the objects is the ambient (hence the name of \emph{cooling law}).
+
+    Here $\mathrm{h} $ is the \emph{heat transfer coeficient} with units of $\mathrm{\frac{W}{m^2 \cdot K}} $ in three dimensions.
+    
+    
     
 
 \end{document}

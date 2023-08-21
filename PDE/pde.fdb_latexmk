@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1692454405 "pde.tex" "pde.pdf" "pde" 1692454406
+["pdflatex"] 1692639203 "pde.tex" "pde.pdf" "pde" 1692639204
   "/etc/texmf/web2c/texmf.cnf" 1691258612 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/abby/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1691259116 11524 50dc032817beb20afc9a0db396436c7e ""
   "/home/abby/latex/en_preamble.tex" 1691837083 77 78fc751951e74098f3e1d5b7e4d5ca5d ""
@@ -60,6 +60,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1248133631 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb" 1248133631 24416 36515493f76659302880e2604105b074 ""
@@ -225,14 +226,16 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1691258618 4073795 a82a847ac97773bf4a607ab050efa3a1 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1691258622 1456678 f62b45aaa61a0f33e478acee5a3fbe47 ""
   "chapters/one.tex" 1692449346 3038 068c856182159b516296abce1b72e653 ""
-  "chapters/two.tex" 1692454404 6084 3dac18c038ce175817f61d9c45277b1b ""
+  "chapters/two.tex" 1692639203 9511 f0aa85f44fe80236008f7e16967b8dde ""
+  "figures//heat-flow.pdf" 1692638957 2271 4624541c59e823285a4326d0cdca32a3 ""
   "figures//uxx.pdf" 1691941389 1908 e84b4473356121a401215fd3bc71d063 ""
   "figures//xt-heath.pdf" 1692450215 13128 728ee26b2deaf3e993c6b23daef786f9 ""
+  "figures/heat-flow.pdf_tex" 1692638957 2771 b0f142af038bdda59014ed4d669b0ac0 ""
   "figures/uxx.pdf_tex" 1691941389 2546 62d42a0b41a51045eb91b304ddac1540 ""
   "figures/xt-heath.pdf_tex" 1692450215 3001 05ba089f57a65972456f59aadfff902c ""
-  "pde.aux" 1692454406 2053 3dc03823f2d5980eacac61055b5f8e8c "pdflatex"
+  "pde.aux" 1692639204 3085 cf5e4f8baa798cb2759e57029ae4a490 "pdflatex"
   "pde.tex" 1692030991 260 be5994aecff6e6b639c11afdc29507fd ""
-  "pde.toc" 1692454406 747 e976be0e1c4fb6ff72617afe1a98d009 "pdflatex"
+  "pde.toc" 1692639204 1164 04d05b4519dc8509486c4949150cee0b "pdflatex"
   (generated)
   "pde.aux"
   "pde.log"
