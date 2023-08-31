@@ -137,6 +137,7 @@
     \begin{equation}\label{furier-law}
         \phi_{q} = -\mathrm{k} \partial_{x} u
     \end{equation}
+    Where the derivative is computed in the perpendicular direction to the surface of the object. 
     And as a flux $\phi _{q}$ has units of $\mathrm{\frac{J}{s \cdot m}}$ or what is the same $\mathrm{\frac{W}{m}}$ (in the three
     dimensional case it has units with square meters, not meters). Here $\mathrm{k}$ is the \emph{thermal conductivity}, the measure
     of the ability of the material to conduct heat, with units of $\mathrm{\frac{W}{K}}$ (In the three dimensional case:
@@ -160,7 +161,26 @@
 
     Here $\mathrm{h} $ is the \emph{heat transfer coeficient} with units of $\mathrm{\frac{W}{m^2 \cdot K}} $ in three dimensions.
     
+    \subsection{\sffamily Application to diffusion type problems}
+    Using this definitions of heat flux we can solve problems with the boundaries inmersed in a liquid kept at a temperature (e.g.
+    air) or insulated to the ambient.
+    
+    \subsubsection{\sffamily Boundary inmersed in a liquid}
+    Imagine a rod with both ends submerged in a liquid kept at temperatures $g_1(t)$ and $g_2(t)$. We can apply both
+    \emph{Newton's law of cooling} and \emph{Fourier's law} to give boundary conditions. From the first we have:
+    \begin{align*}
+        \phi_{q,0}&=h[u(0,t)-g_1(t)]\\
+        \phi_{q,L}&=h[u(L,t)-g_2(t)]
+    \end{align*}
+    And from the \emph{Fourier's law}:
+    \begin{align*}
+        \phi _{q,0}&= k \partial_{x} u\\
+        \phi_{q,L} &= -k \partial_{x} u
+    \end{align*}
     
     
+
+
+
 
 \end{document}
